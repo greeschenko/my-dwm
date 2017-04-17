@@ -2,10 +2,10 @@
 
 /* appearance */
 static const char *fonts[] = {
-    "monospace:size=9",
-    "FontAwesome:size=9"
+    "Droid Sans Mono Slashed for Powerline:size=10",
+    "FontAwesome:size=10"
 };
-static const char dmenufont[]       = "monospace:size=16";
+static const char dmenufont[]       = "Droid Sans Mono Slashed for Powerline:size=16";
 static const char normbordercolor[] = "#444444";
 static const char normbgcolor[]     = "#222222";
 static const char normfgcolor[]     = "#bbbbbb";
@@ -19,8 +19,8 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 
 /* tagging */
 static const char *tags[] = {
-    "1:task", "2:work", "3:web", "4:sys",
-    "5:free", "6:gimp", "7:ink", "8:vbox", "9:ff"
+    "1", "2", "3", "4",
+    "5", "6", "7", "8", "9"
 };
 
 static const Rule rules[] = {
@@ -77,11 +77,11 @@ static const char *dmenucmd[] = {
     normbgcolor, "-nf", normfgcolor, "-sb", selbordercolor, "-w", "904",
     "-x", "226", "-y", "300", NULL
 };
-static const char *termcmd[]     = { "xterm", NULL };
-static const char *vimcmd[]      = { "xterm", "-e", "vim", NULL };
-static const char *mccmd[]       = { "xterm", "-e", "mc", NULL };
-static const char *rangercmd[]   = { "xterm", "-e", "ranger", NULL };
-static const char *rootcmd[]     = { "xterm", "-e", "su", NULL };
+static const char *termcmd[]     = { "st", NULL };
+static const char *vimcmd[]      = { "st", "-e", "vim", NULL };
+static const char *mccmd[]       = { "st", "-e", "mc", NULL };
+static const char *rangercmd[]   = { "st", "-e", "ranger", NULL };
+static const char *rootcmd[]     = { "st", "-e", "su", NULL };
 
 static const char *apluscmd[]    = { "amixer", "sset", "Master", "5%+", NULL };
 static const char *aminuscmd[]   = { "amixer", "sset", "Master", "5%-", NULL };
